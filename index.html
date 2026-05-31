@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>PALÍNDROMO</title>
+</head>
+
+<body class="bg-linear-to-r from-cyan-200 to-cyan-50 min-h-screen p-2 sm:p-4">
+
+    <header class="bg-[url(imagenes/retulo.png)] bg-[length:100%_100%] bg-center bg-no-repeat mb-20 border-4 border-cyan-800 border-dashed md:border-[10px] rounded-3xl mt-2 mx-auto w-[95%] p-6 lg:border-8 lg:p-10 lg:w-4/5 min-h-[120px] 2xl:min-h-[300px] flex items-center justify-center">
+        <h1 class="text-center text-cyan-900 font-black text-3xl sm:text-4xl lg:text-5xl xl:text-7xl [-webkit-text-stroke:2px_white] [text-shadow:0_0_12px_rgba(0,0,0,0.5)]">
+            PALÍNDROMO
+        </h1>
+    </header>
+
+    <main>
+        <details open class="mb-20 mx-auto w-[95%] lg:w-4/5 border-2 border-cyan-300 rounded-2xl p-4 bg-cyan-50/50">
+            <summary class="cursor-pointer bg-linear-to-r from-cyan-400 to-cyan-300 rounded-2xl w-full p-2 pl-4 text-cyan-900 font-bold mb-4 shadow-md hover:from-cyan-500 hover:to-cyan-400 transition-all">
+                Ejercicio 7.8. Indica si la frase es palíndromo
+            </summary>
+            <p class="px-4 text-cyan-800 font-medium max-w-4xl">
+                Programa una función que valide si una palabra o frase dada es un palíndromo (que se lee igual en un sentido que en otro), pe. mifuncion("Salas") devolverá true.
+            </p>
+        </details>
+
+        <section class="flex flex-col items-center gap-6 px-4 lg:ml-20 2xl:ml-40 transition-all duration-300">
+            <div class="w-full sm:w-[90%] md:w-3/4 lg:w-1/2 border-2 border-cyan-800 bg-linear-to-r from-cyan-600 to-teal-100 rounded-2xl p-6 flex flex-col items-center gap-4">
+                
+                <label class="text-cyan-950 font-black self-start">Introduce una frase:</label>
+                
+                <input class="border border-cyan-600 rounded-2xl w-full p-3 text-cyan-900 font-bold text-center bg-cyan-50/50" 
+                       type="text" id="texto" placeholder="Escribe aquí...">
+
+                <button id="mostrar" class="border-2 border-cyan-600 bg-cyan-600 text-white font-bold rounded-2xl px-6 py-2 transition-all hover:bg-green-500 hover:scale-105 hover:shadow-lg w-full sm:w-auto">
+                    MOSTRAR PALÍNDROMO
+                </button>
+
+                <p class="w-full border border-solid border-cyan-500 bg-cyan-50 py-3 rounded-2xl text-center text-cyan-900 font-bold mt-4" id="resultado"></p>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/palindromo.js"></script>
+</body>
+</html>
